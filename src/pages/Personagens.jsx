@@ -1,13 +1,14 @@
-import React from 'react'
 import vilao from '../assets/once-ler.webp'
 import lorax from '../assets/lorax.jpeg'
 import audrey from '../assets/Audrey.webp'
 import prefeito from '../assets/prefeito.webp'
 import ted from '../assets/Ted.webp'
+import Header from '../componentes/Header'
 
-export default function personagens() {
+export default function Personagens() {
   return (
     <div>
+      <Header />
       <h2>Personagens</h2>
       <img src={ted} alt="personagem principal" className='text-9xl' />
       <p>ted</p>

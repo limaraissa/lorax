@@ -1,20 +1,29 @@
-import React from 'react'
-import Header from './componentes/Header'
-import SS from './componentes/Sinopse'
-import PP from './componentes/personagens'
-import img1 from './assets/lorax1.jpeg'
+
+import Home from './pages/Home'
+import Personagens from './pages/Personagens'
+
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Sinopse from './pages/Sinopse'
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path:"/personagens",
+    element: <Personagens/>
+  },
+  {
+    path:"/sinopse",
+    element:<Sinopse/>
+  }
+])
 
  function App() {
   return (
-    <div place-content-center justify-center flex>
-      <Header/>
-      <img src={img1} alt="imagem capa do filme lorax"  className='w-96 h-80 place-content-center rounded-2xl'/>
-      <SS/>
-      <PP/>
-    </div>
+    <RouterProvider router={router} />
   )
 }
 
