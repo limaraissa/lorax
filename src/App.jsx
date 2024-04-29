@@ -1,10 +1,10 @@
 
 import Home from './pages/Home'
 import Personagens from './pages/Personagens'
-
+import Sinopse from './pages/Sinopse'
+import Header from './componentes/Header'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Sinopse from './pages/Sinopse'
 
 const router = createBrowserRouter([
   {
